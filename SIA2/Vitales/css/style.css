@@ -1,0 +1,20 @@
+/* Custom styles */
+body {
+    scroll-behavior: smooth;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  #image-carousel img {
+    height: 600px;
+    object-fit: cover;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  

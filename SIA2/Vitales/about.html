@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - LexLegal Consulting</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">LexLegal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5 mt-5 pt-5">
+    <div class="container">
+      <h1>About LexLegal</h1>
+      <p class="lead">History, Values, Mission & Vision</p>
+    </div>
+  </header>
+
+  <!-- History Timeline -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item mb-5">
+          <h5>2002</h5>
+          <p>LexLegal was established in Manila as a boutique legal firm with a strong vision of client-centered service.</p>
+        </div>
+        <div class="timeline-item mb-5">
+          <h5>2010</h5>
+          <p>Expanded our services to include corporate consulting and compliance solutions.</p>
+        </div>
+        <div class="timeline-item mb-5">
+          <h5>2018</h5>
+          <p>Launched our international practice and began serving clients in Southeast Asia.</p>
+        </div>
+        <div class="timeline-item">
+          <h5>Today</h5>
+          <p>We continue to grow, adapt, and lead with a trusted name in law and consulting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Core Values</h2>
+      <div class="row text-center">
+        <div class="col-md-3"><strong>Integrity</strong><p>We act with honesty and accountability.</p></div>
+        <div class="col-md-3"><strong>Excellence</strong><p>We deliver results with passion and precision.</p></div>
+        <div class="col-md-3"><strong>Client-Centered</strong><p>Our clients' goals guide our actions.</p></div>
+        <div class="col-md-3"><strong>Confidentiality</strong><p>We protect all client information with utmost care.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy, Mission, Vision -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Purpose</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Philosophy</h5>
+          <p>We believe that combining legal insight with strategic thinking empowers success.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Mission</h5>
+          <p>To guide our clients through complex legal and business challenges with clarity and confidence.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Vision</h5>
+          <p>To be the most trusted legal and consulting firm in the Philippines and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">&copy; 2025 LexLegal Consulting. All rights reserved.</div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+  <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <form id="loginForm">
+        <div class="modal-body">
+          <input type="text" class="form-control mb-3" id="loginUsername" placeholder="Username" required>
+          <input type="password" class="form-control mb-3" id="loginPassword" placeholder="Password" required>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <form id="signupForm">
+        <div class="modal-body">
+          <input type="text" class="form-control mb-3" id="signupUsername" placeholder="Username" required>
+          <input type="email" class="form-control mb-3" id="signupEmail" placeholder="Email" required>
+          <input type="password" class="form-control mb-3" id="signupPassword" placeholder="Password" required>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success w-100">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="js/auth.js"></script>
+</body>
+</html>
